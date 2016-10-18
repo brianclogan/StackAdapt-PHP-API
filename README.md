@@ -14,30 +14,15 @@ PHP 5.4.0 and later
 ## Installation & Usage
 ### Composer
 
-To install the bindings via [Composer](http://getcomposer.org/), add the following to `composer.json`:
-
+```composer require colling-media/stackadapt-api
 ```
-{
-  "repositories": [
-    {
-      "type": "git",
-      "url": "https://github.com//.git"
-    }
-  ],
-  "require": {
-    "/": "*@dev"
-  }
-}
-```
-
-Then run `composer install`
 
 ### Manual Installation
 
 Download the files and include `autoload.php`:
 
 ```php
-    require_once('/path/to/SwaggerClient-php/autoload.php');
+    require_once('/path/to/autoload.php');
 ```
 
 ## Tests
