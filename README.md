@@ -96,7 +96,6 @@ Class | Method | HTTP request | Description
 *NativeadApi* | [**updateNativeAd**](docs/Api/NativeadApi.md#updatenativead) | **PUT** /native_ad/{id} | Update existing native ad
 *NativeadsApi* | [**findNativeAds**](docs/Api/NativeadsApi.md#findnativeads) | **GET** /native_ads | Returns all native ads
 *StatsApi* | [**getStats**](docs/Api/StatsApi.md#getstats) | **GET** /stats | Get stats
-*StatsApi* | [**getStats_0**](docs/Api/StatsApi.md#getstats_0) | **GET** /stats | Get stats
 
 
 ## Documentation For Models
