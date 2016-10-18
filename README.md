@@ -1,0 +1,1 @@
+# StackAdapt-PHP-API
