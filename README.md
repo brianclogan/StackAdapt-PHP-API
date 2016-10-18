@@ -14,7 +14,10 @@ PHP 5.4.0 and later
 ## Installation & Usage
 ### Composer
 
-`composer require colling-media/stackadapt-api`
+
+```php
+    composer require colling-media/stackadapt-api
+````
 
 ### Manual Installation
 
