@@ -4,7 +4,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  Swagger\Client
+ * @package  CollingMedia\StackAdapt
  * @author   http://github.com/swagger-api/swagger-codegen
  * @license  http://www.apache.org/licenses/LICENSE-2.0 Apache Licene v2
  * @link     https://github.com/swagger-api/swagger-codegen
@@ -40,16 +40,16 @@
 
 namespace CollingMedia\StackAdapt\Api;
 
-use \Swagger\Client\Configuration;
-use \Swagger\Client\ApiClient;
-use \Swagger\Client\ApiException;
-use \Swagger\Client\ObjectSerializer;
+use \CollingMedia\StackAdapt\Configuration;
+use \CollingMedia\StackAdapt\ApiClient;
+use \CollingMedia\StackAdapt\ApiException;
+use \CollingMedia\StackAdapt\ObjectSerializer;
 
 /**
  * ConversionTrackersApi Class Doc Comment
  *
  * @category Class
- * @package  Swagger\Client
+ * @package  CollingMedia\StackAdapt
  * @author   http://github.com/swagger-api/swagger-codegen
  * @license  http://www.apache.org/licenses/LICENSE-2.0 Apache Licene v2
  * @link     https://github.com/swagger-api/swagger-codegen
@@ -60,16 +60,16 @@ class ConversionTrackersApi
     /**
      * API Client
      *
-     * @var \Swagger\Client\ApiClient instance of the ApiClient
+     * @var \CollingMedia\StackAdapt\ApiClient instance of the ApiClient
      */
     protected $apiClient;
 
     /**
      * Constructor
      *
-     * @param \Swagger\Client\ApiClient|null $apiClient The api client to use
+     * @param \CollingMedia\StackAdapt\ApiClient|null $apiClient The api client to use
      */
-    public function __construct(\Swagger\Client\ApiClient $apiClient = null)
+    public function __construct(\CollingMedia\StackAdapt\ApiClient $apiClient = null)
     {
         if ($apiClient == null) {
             $apiClient = new ApiClient();
@@ -82,7 +82,7 @@ class ConversionTrackersApi
     /**
      * Get API client
      *
-     * @return \Swagger\Client\ApiClient get the API client
+     * @return \CollingMedia\StackAdapt\ApiClient get the API client
      */
     public function getApiClient()
     {
@@ -92,11 +92,11 @@ class ConversionTrackersApi
     /**
      * Set the API client
      *
-     * @param \Swagger\Client\ApiClient $apiClient set the API client
+     * @param \CollingMedia\StackAdapt\ApiClient $apiClient set the API client
      *
      * @return ConversionTrackersApi
      */
-    public function setApiClient(\Swagger\Client\ApiClient $apiClient)
+    public function setApiClient(\CollingMedia\StackAdapt\ApiClient $apiClient)
     {
         $this->apiClient = $apiClient;
         return $this;
@@ -107,9 +107,9 @@ class ConversionTrackersApi
      *
      * Create new conversion tracker
      *
-     * @param \Swagger\Client\Model\ConversionTracker $body  (optional)
-     * @return \Swagger\Client\Model\ConversionTracker
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @param \CollingMedia\StackAdapt\Model\ConversionTracker $body  (optional)
+     * @return \CollingMedia\StackAdapt\Model\ConversionTracker
+     * @throws \CollingMedia\StackAdapt\ApiException on non-2xx response
      */
     public function createConversionTracker($body = null)
     {
@@ -122,9 +122,9 @@ class ConversionTrackersApi
      *
      * Create new conversion tracker
      *
-     * @param \Swagger\Client\Model\ConversionTracker $body  (optional)
-     * @return Array of \Swagger\Client\Model\ConversionTracker, HTTP status code, HTTP response headers (array of strings)
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @param \CollingMedia\StackAdapt\Model\ConversionTracker $body  (optional)
+     * @return Array of \CollingMedia\StackAdapt\Model\ConversionTracker, HTTP status code, HTTP response headers (array of strings)
+     * @throws \CollingMedia\StackAdapt\ApiException on non-2xx response
      */
     public function createConversionTrackerWithHttpInfo($body = null)
     {
@@ -173,19 +173,19 @@ class ConversionTrackersApi
                 $queryParams,
                 $httpBody,
                 $headerParams,
-                '\Swagger\Client\Model\ConversionTracker',
+                '\CollingMedia\StackAdapt\Model\ConversionTracker',
                 '/conversion_tracker'
             );
 
-            return array($this->apiClient->getSerializer()->deserialize($response, '\Swagger\Client\Model\ConversionTracker', $httpHeader, 'conversion tracker'), $statusCode, $httpHeader);
+            return array($this->apiClient->getSerializer()->deserialize($response, '\CollingMedia\StackAdapt\Model\ConversionTracker', $httpHeader, 'conversion tracker'), $statusCode, $httpHeader);
         } catch (ApiException $e) {
             switch ($e->getCode()) {
                 case 200:
-                    $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\Swagger\Client\Model\ConversionTracker', $e->getResponseHeaders());
+                    $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\CollingMedia\StackAdapt\Model\ConversionTracker', $e->getResponseHeaders());
                     $e->setResponseObject($data);
                     break;
                 case 400:
-                    $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\Swagger\Client\Model\ErrorModel', $e->getResponseHeaders());
+                    $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\CollingMedia\StackAdapt\Model\ErrorModel', $e->getResponseHeaders());
                     $e->setResponseObject($data);
                     break;
             }
@@ -201,7 +201,7 @@ class ConversionTrackersApi
      *
      * @param int $id Id of conversion_tracker (required)
      * @return void
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \CollingMedia\StackAdapt\ApiException on non-2xx response
      */
     public function deleteConversionTrackers($id)
     {
@@ -216,7 +216,7 @@ class ConversionTrackersApi
      *
      * @param int $id Id of conversion_tracker (required)
      * @return Array of null, HTTP status code, HTTP response headers (array of strings)
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \CollingMedia\StackAdapt\ApiException on non-2xx response
      */
     public function deleteConversionTrackersWithHttpInfo($id)
     {
@@ -280,7 +280,7 @@ class ConversionTrackersApi
         } catch (ApiException $e) {
             switch ($e->getCode()) {
                 case 400:
-                    $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\Swagger\Client\Model\ErrorModel', $e->getResponseHeaders());
+                    $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\CollingMedia\StackAdapt\Model\ErrorModel', $e->getResponseHeaders());
                     $e->setResponseObject($data);
                     break;
             }
@@ -295,8 +295,8 @@ class ConversionTrackersApi
      * Find conversion tracker by id
      *
      * @param int $id Id of conversion_tracker (required)
-     * @return \Swagger\Client\Model\ConversionTracker
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @return \CollingMedia\StackAdapt\Model\ConversionTracker
+     * @throws \CollingMedia\StackAdapt\ApiException on non-2xx response
      */
     public function findConversionTracker($id)
     {
@@ -310,8 +310,8 @@ class ConversionTrackersApi
      * Find conversion tracker by id
      *
      * @param int $id Id of conversion_tracker (required)
-     * @return Array of \Swagger\Client\Model\ConversionTracker, HTTP status code, HTTP response headers (array of strings)
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @return Array of \CollingMedia\StackAdapt\Model\ConversionTracker, HTTP status code, HTTP response headers (array of strings)
+     * @throws \CollingMedia\StackAdapt\ApiException on non-2xx response
      */
     public function findConversionTrackerWithHttpInfo($id)
     {
@@ -367,19 +367,19 @@ class ConversionTrackersApi
                 $queryParams,
                 $httpBody,
                 $headerParams,
-                '\Swagger\Client\Model\ConversionTracker',
+                '\CollingMedia\StackAdapt\Model\ConversionTracker',
                 '/conversion_tracker/{id}'
             );
 
-            return array($this->apiClient->getSerializer()->deserialize($response, '\Swagger\Client\Model\ConversionTracker', $httpHeader, 'conversion tracker'), $statusCode, $httpHeader);
+            return array($this->apiClient->getSerializer()->deserialize($response, '\CollingMedia\StackAdapt\Model\ConversionTracker', $httpHeader, 'conversion tracker'), $statusCode, $httpHeader);
         } catch (ApiException $e) {
             switch ($e->getCode()) {
                 case 200:
-                    $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\Swagger\Client\Model\ConversionTracker', $e->getResponseHeaders());
+                    $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\CollingMedia\StackAdapt\Model\ConversionTracker', $e->getResponseHeaders());
                     $e->setResponseObject($data);
                     break;
                 case 400:
-                    $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\Swagger\Client\Model\ErrorModel', $e->getResponseHeaders());
+                    $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\CollingMedia\StackAdapt\Model\ErrorModel', $e->getResponseHeaders());
                     $e->setResponseObject($data);
                     break;
             }
@@ -393,8 +393,8 @@ class ConversionTrackersApi
      *
      * Returns all conversion trackers
      *
-     * @return \Swagger\Client\Model\ConversionTracker[]
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @return \CollingMedia\StackAdapt\Model\ConversionTracker[]
+     * @throws \CollingMedia\StackAdapt\ApiException on non-2xx response
      */
     public function findConversionTrackers()
     {
@@ -407,8 +407,8 @@ class ConversionTrackersApi
      *
      * Returns all conversion trackers
      *
-     * @return Array of \Swagger\Client\Model\ConversionTracker[], HTTP status code, HTTP response headers (array of strings)
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @return Array of \CollingMedia\StackAdapt\Model\ConversionTracker[], HTTP status code, HTTP response headers (array of strings)
+     * @throws \CollingMedia\StackAdapt\ApiException on non-2xx response
      */
     public function findConversionTrackersWithHttpInfo()
     {
@@ -452,19 +452,19 @@ class ConversionTrackersApi
                 $queryParams,
                 $httpBody,
                 $headerParams,
-                '\Swagger\Client\Model\ConversionTracker[]',
+                '\CollingMedia\StackAdapt\Model\ConversionTracker[]',
                 '/conversion_trackers'
             );
 
-            return array($this->apiClient->getSerializer()->deserialize($response, '\Swagger\Client\Model\ConversionTracker[]', $httpHeader, 'conversion tracker'), $statusCode, $httpHeader);
+            return array($this->apiClient->getSerializer()->deserialize($response, '\CollingMedia\StackAdapt\Model\ConversionTracker[]', $httpHeader, 'conversion tracker'), $statusCode, $httpHeader);
         } catch (ApiException $e) {
             switch ($e->getCode()) {
                 case 200:
-                    $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\Swagger\Client\Model\ConversionTracker[]', $e->getResponseHeaders());
+                    $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\CollingMedia\StackAdapt\Model\ConversionTracker[]', $e->getResponseHeaders());
                     $e->setResponseObject($data);
                     break;
                 case 400:
-                    $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\Swagger\Client\Model\ErrorModel', $e->getResponseHeaders());
+                    $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\CollingMedia\StackAdapt\Model\ErrorModel', $e->getResponseHeaders());
                     $e->setResponseObject($data);
                     break;
             }
@@ -479,9 +479,9 @@ class ConversionTrackersApi
      * Update exisiting conversion tracker
      *
      * @param int $id Id of conversion_tracker (required)
-     * @param \Swagger\Client\Model\ConversionTracker $body  (optional)
-     * @return \Swagger\Client\Model\ConversionTracker
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @param \CollingMedia\StackAdapt\Model\ConversionTracker $body  (optional)
+     * @return \CollingMedia\StackAdapt\Model\ConversionTracker
+     * @throws \CollingMedia\StackAdapt\ApiException on non-2xx response
      */
     public function updateConversionTracker($id, $body = null)
     {
@@ -495,9 +495,9 @@ class ConversionTrackersApi
      * Update exisiting conversion tracker
      *
      * @param int $id Id of conversion_tracker (required)
-     * @param \Swagger\Client\Model\ConversionTracker $body  (optional)
-     * @return Array of \Swagger\Client\Model\ConversionTracker, HTTP status code, HTTP response headers (array of strings)
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @param \CollingMedia\StackAdapt\Model\ConversionTracker $body  (optional)
+     * @return Array of \CollingMedia\StackAdapt\Model\ConversionTracker, HTTP status code, HTTP response headers (array of strings)
+     * @throws \CollingMedia\StackAdapt\ApiException on non-2xx response
      */
     public function updateConversionTrackerWithHttpInfo($id, $body = null)
     {
@@ -558,19 +558,19 @@ class ConversionTrackersApi
                 $queryParams,
                 $httpBody,
                 $headerParams,
-                '\Swagger\Client\Model\ConversionTracker',
+                '\CollingMedia\StackAdapt\Model\ConversionTracker',
                 '/conversion_tracker/{id}'
             );
 
-            return array($this->apiClient->getSerializer()->deserialize($response, '\Swagger\Client\Model\ConversionTracker', $httpHeader, 'conversion tracker'), $statusCode, $httpHeader);
+            return array($this->apiClient->getSerializer()->deserialize($response, '\CollingMedia\StackAdapt\Model\ConversionTracker', $httpHeader, 'conversion tracker'), $statusCode, $httpHeader);
         } catch (ApiException $e) {
             switch ($e->getCode()) {
                 case 200:
-                    $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\Swagger\Client\Model\ConversionTracker', $e->getResponseHeaders());
+                    $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\CollingMedia\StackAdapt\Model\ConversionTracker', $e->getResponseHeaders());
                     $e->setResponseObject($data);
                     break;
                 case 400:
-                    $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\Swagger\Client\Model\ErrorModel', $e->getResponseHeaders());
+                    $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\CollingMedia\StackAdapt\Model\ErrorModel', $e->getResponseHeaders());
                     $e->setResponseObject($data);
                     break;
             }

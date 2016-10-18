@@ -1,4 +1,4 @@
-# Swagger\Client\NativeadsApi
+# CollingMedia\StackAdapt\NativeadsApi
 
 All URIs are relative to *http://api.stackadapt.com/service/v2*
 
@@ -8,7 +8,7 @@ Method | HTTP request | Description
 
 
 # **findNativeAds**
-> \Swagger\Client\Model\NativeAdResponse[] findNativeAds()
+> \CollingMedia\StackAdapt\Model\NativeAdResponse[] findNativeAds()
 
 Returns all native ads
 
@@ -20,15 +20,15 @@ Returns all native ads from the system that the user has access to
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure API key authorization: api_key
-Swagger\Client\Configuration::getDefaultConfiguration()->setApiKey('api_key', 'YOUR_API_KEY');
+CollingMedia\StackAdapt\Configuration::getDefaultConfiguration()->setApiKey('api_key', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// Swagger\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('api_key', 'Bearer');
+// CollingMedia\StackAdapt\Configuration::getDefaultConfiguration()->setApiKeyPrefix('api_key', 'Bearer');
 // Configure API key authorization: X-Authorization
-Swagger\Client\Configuration::getDefaultConfiguration()->setApiKey('X-Authorization', 'YOUR_API_KEY');
+CollingMedia\StackAdapt\Configuration::getDefaultConfiguration()->setApiKey('X-Authorization', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// Swagger\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('X-Authorization', 'Bearer');
+// CollingMedia\StackAdapt\Configuration::getDefaultConfiguration()->setApiKeyPrefix('X-Authorization', 'Bearer');
 
-$api_instance = new Swagger\Client\Api\NativeadsApi();
+$api_instance = new CollingMedia\StackAdapt\Api\NativeadsApi();
 
 try {
     $result = $api_instance->findNativeAds();
@@ -44,7 +44,7 @@ This endpoint does not need any parameter.
 
 ### Return type
 
-[**\Swagger\Client\Model\NativeAdResponse[]**](../Model/NativeAdResponse.md)
+[**\CollingMedia\StackAdapt\Model\NativeAdResponse[]**](../Model/NativeAdResponse.md)
 
 ### Authorization
 

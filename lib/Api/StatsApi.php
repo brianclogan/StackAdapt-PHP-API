@@ -4,7 +4,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  Swagger\Client
+ * @package  CollingMedia\StackAdapt
  * @author   http://github.com/swagger-api/swagger-codegen
  * @license  http://www.apache.org/licenses/LICENSE-2.0 Apache Licene v2
  * @link     https://github.com/swagger-api/swagger-codegen
@@ -40,16 +40,16 @@
 
 namespace CollingMedia\StackAdapt\Api;
 
-use \Swagger\Client\Configuration;
-use \Swagger\Client\ApiClient;
-use \Swagger\Client\ApiException;
-use \Swagger\Client\ObjectSerializer;
+use \CollingMedia\StackAdapt\Configuration;
+use \CollingMedia\StackAdapt\ApiClient;
+use \CollingMedia\StackAdapt\ApiException;
+use \CollingMedia\StackAdapt\ObjectSerializer;
 
 /**
  * StatsApi Class Doc Comment
  *
  * @category Class
- * @package  Swagger\Client
+ * @package  CollingMedia\StackAdapt
  * @author   http://github.com/swagger-api/swagger-codegen
  * @license  http://www.apache.org/licenses/LICENSE-2.0 Apache Licene v2
  * @link     https://github.com/swagger-api/swagger-codegen
@@ -60,16 +60,16 @@ class StatsApi
     /**
      * API Client
      *
-     * @var \Swagger\Client\ApiClient instance of the ApiClient
+     * @var \CollingMedia\StackAdapt\ApiClient instance of the ApiClient
      */
     protected $apiClient;
 
     /**
      * Constructor
      *
-     * @param \Swagger\Client\ApiClient|null $apiClient The api client to use
+     * @param \CollingMedia\StackAdapt\ApiClient|null $apiClient The api client to use
      */
-    public function __construct(\Swagger\Client\ApiClient $apiClient = null)
+    public function __construct(\CollingMedia\StackAdapt\ApiClient $apiClient = null)
     {
         if ($apiClient == null) {
             $apiClient = new ApiClient();
@@ -82,7 +82,7 @@ class StatsApi
     /**
      * Get API client
      *
-     * @return \Swagger\Client\ApiClient get the API client
+     * @return \CollingMedia\StackAdapt\ApiClient get the API client
      */
     public function getApiClient()
     {
@@ -92,11 +92,11 @@ class StatsApi
     /**
      * Set the API client
      *
-     * @param \Swagger\Client\ApiClient $apiClient set the API client
+     * @param \CollingMedia\StackAdapt\ApiClient $apiClient set the API client
      *
      * @return StatsApi
      */
-    public function setApiClient(\Swagger\Client\ApiClient $apiClient)
+    public function setApiClient(\CollingMedia\StackAdapt\ApiClient $apiClient)
     {
         $this->apiClient = $apiClient;
         return $this;
@@ -115,7 +115,7 @@ class StatsApi
      * @param string $timezone The timezone of the start and end date, if applicable. (optional)
      * @param string $group_by_resource The resource type to group by when retrieve stats. Valid group_by_resources are: \&quot;advertiser\&quot;, \&quot;line_item\&quot;, \&quot;campaign\&quot;, \&quot;native_ad\&quot;. The group_by_resource should be subordinated to resource for group by action. (optional)
      * @return void
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \CollingMedia\StackAdapt\ApiException on non-2xx response
      */
     public function getStats($resource, $type, $id = null, $start_date = null, $end_date = null, $timezone = null, $group_by_resource = null)
     {
@@ -136,7 +136,7 @@ class StatsApi
      * @param string $timezone The timezone of the start and end date, if applicable. (optional)
      * @param string $group_by_resource The resource type to group by when retrieve stats. Valid group_by_resources are: \&quot;advertiser\&quot;, \&quot;line_item\&quot;, \&quot;campaign\&quot;, \&quot;native_ad\&quot;. The group_by_resource should be subordinated to resource for group by action. (optional)
      * @return Array of null, HTTP status code, HTTP response headers (array of strings)
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \CollingMedia\StackAdapt\ApiException on non-2xx response
      */
     public function getStatsWithHttpInfo($resource, $type, $id = null, $start_date = null, $end_date = null, $timezone = null, $group_by_resource = null)
     {
@@ -242,7 +242,7 @@ class StatsApi
      * @param string $timezone The timezone of the start and end date, if applicable. (optional)
      * @param string $group_by_resource The resource type to group by when retrieve stats. Valid group_by_resources are: \&quot;advertiser\&quot;, \&quot;line_item\&quot;, \&quot;campaign\&quot;, \&quot;native_ad\&quot;. The group_by_resource should be subordinated to resource for group by action. (optional)
      * @return void
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \CollingMedia\StackAdapt\ApiException on non-2xx response
      */
     public function getStats_0($resource, $type, $id = null, $start_date = null, $end_date = null, $timezone = null, $group_by_resource = null)
     {
@@ -263,7 +263,7 @@ class StatsApi
      * @param string $timezone The timezone of the start and end date, if applicable. (optional)
      * @param string $group_by_resource The resource type to group by when retrieve stats. Valid group_by_resources are: \&quot;advertiser\&quot;, \&quot;line_item\&quot;, \&quot;campaign\&quot;, \&quot;native_ad\&quot;. The group_by_resource should be subordinated to resource for group by action. (optional)
      * @return Array of null, HTTP status code, HTTP response headers (array of strings)
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \CollingMedia\StackAdapt\ApiException on non-2xx response
      */
     public function getStats_0WithHttpInfo($resource, $type, $id = null, $start_date = null, $end_date = null, $timezone = null, $group_by_resource = null)
     {

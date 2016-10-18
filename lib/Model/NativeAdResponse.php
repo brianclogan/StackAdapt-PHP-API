@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  Swagger\Client
+ * @package  CollingMedia\StackAdapt
  * @author   http://github.com/swagger-api/swagger-codegen
  * @license  http://www.apache.org/licenses/LICENSE-2.0 Apache Licene v2
  * @link     https://github.com/swagger-api/swagger-codegen
@@ -48,7 +48,7 @@ use \ArrayAccess;
  *
  * @category    Class */
 /** 
- * @package     Swagger\Client
+ * @package     CollingMedia\StackAdapt
  * @author      http://github.com/swagger-api/swagger-codegen
  * @license     http://www.apache.org/licenses/LICENSE-2.0 Apache Licene v2
  * @link        https://github.com/swagger-api/swagger-codegen
@@ -68,14 +68,14 @@ class NativeAdResponse implements ArrayAccess
     protected static $swaggerTypes = array(
         'id' => 'int',
         'click_url' => 'string',
-        'input_data' => '\Swagger\Client\Model\InputData',
+        'input_data' => '\CollingMedia\StackAdapt\Model\InputData',
         'audit_status' => 'string',
         'name' => 'string',
         'state' => 'string',
         'imp_tracker_urls' => 'string[]',
         'brandname' => 'string',
-        'creatives' => '\Swagger\Client\Model\CreativeResponse[]',
-        'icon' => '\Swagger\Client\Model\CreativeResponse'
+        'creatives' => '\CollingMedia\StackAdapt\Model\CreativeResponse[]',
+        'icon' => '\CollingMedia\StackAdapt\Model\CreativeResponse'
     );
 
     public static function swaggerTypes()
@@ -332,7 +332,7 @@ class NativeAdResponse implements ArrayAccess
 
     /**
      * Gets input_data
-     * @return \Swagger\Client\Model\InputData
+     * @return \CollingMedia\StackAdapt\Model\InputData
      */
     public function getInputData()
     {
@@ -341,7 +341,7 @@ class NativeAdResponse implements ArrayAccess
 
     /**
      * Sets input_data
-     * @param \Swagger\Client\Model\InputData $input_data 
+     * @param \CollingMedia\StackAdapt\Model\InputData $input_data
      * @return $this
      */
     public function setInputData($input_data)
@@ -466,7 +466,7 @@ class NativeAdResponse implements ArrayAccess
 
     /**
      * Gets creatives
-     * @return \Swagger\Client\Model\CreativeResponse[]
+     * @return \CollingMedia\StackAdapt\Model\CreativeResponse[]
      */
     public function getCreatives()
     {
@@ -475,7 +475,7 @@ class NativeAdResponse implements ArrayAccess
 
     /**
      * Sets creatives
-     * @param \Swagger\Client\Model\CreativeResponse[] $creatives 
+     * @param \CollingMedia\StackAdapt\Model\CreativeResponse[] $creatives
      * @return $this
      */
     public function setCreatives($creatives)
@@ -487,7 +487,7 @@ class NativeAdResponse implements ArrayAccess
 
     /**
      * Gets icon
-     * @return \Swagger\Client\Model\CreativeResponse
+     * @return \CollingMedia\StackAdapt\Model\CreativeResponse
      */
     public function getIcon()
     {
@@ -496,7 +496,7 @@ class NativeAdResponse implements ArrayAccess
 
     /**
      * Sets icon
-     * @param \Swagger\Client\Model\CreativeResponse $icon 
+     * @param \CollingMedia\StackAdapt\Model\CreativeResponse $icon
      * @return $this
      */
     public function setIcon($icon)
@@ -557,10 +557,10 @@ class NativeAdResponse implements ArrayAccess
     public function __toString()
     {
         if (defined('JSON_PRETTY_PRINT')) { // use JSON pretty print
-            return json_encode(\Swagger\Client\ObjectSerializer::sanitizeForSerialization($this), JSON_PRETTY_PRINT);
+            return json_encode(\CollingMedia\StackAdapt\ObjectSerializer::sanitizeForSerialization($this), JSON_PRETTY_PRINT);
         }
 
-        return json_encode(\Swagger\Client\ObjectSerializer::sanitizeForSerialization($this));
+        return json_encode(\CollingMedia\StackAdapt\ObjectSerializer::sanitizeForSerialization($this));
     }
 }
 

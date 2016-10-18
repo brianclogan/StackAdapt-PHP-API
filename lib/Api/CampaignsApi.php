@@ -4,7 +4,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  Swagger\Client
+ * @package  CollingMedia\StackAdapt
  * @author   http://github.com/swagger-api/swagger-codegen
  * @license  http://www.apache.org/licenses/LICENSE-2.0 Apache Licene v2
  * @link     https://github.com/swagger-api/swagger-codegen
@@ -40,16 +40,16 @@
 
 namespace CollingMedia\StackAdapt\Api;
 
-use \Swagger\Client\Configuration;
-use \Swagger\Client\ApiClient;
-use \Swagger\Client\ApiException;
-use \Swagger\Client\ObjectSerializer;
+use \CollingMedia\StackAdapt\Configuration;
+use \CollingMedia\StackAdapt\ApiClient;
+use \CollingMedia\StackAdapt\ApiException;
+use \CollingMedia\StackAdapt\ObjectSerializer;
 
 /**
  * CampaignsApi Class Doc Comment
  *
  * @category Class
- * @package  Swagger\Client
+ * @package  CollingMedia\StackAdapt
  * @author   http://github.com/swagger-api/swagger-codegen
  * @license  http://www.apache.org/licenses/LICENSE-2.0 Apache Licene v2
  * @link     https://github.com/swagger-api/swagger-codegen
@@ -60,16 +60,16 @@ class CampaignsApi
     /**
      * API Client
      *
-     * @var \Swagger\Client\ApiClient instance of the ApiClient
+     * @var \CollingMedia\StackAdapt\ApiClient instance of the ApiClient
      */
     protected $apiClient;
 
     /**
      * Constructor
      *
-     * @param \Swagger\Client\ApiClient|null $apiClient The api client to use
+     * @param \CollingMedia\StackAdapt\ApiClient|null $apiClient The api client to use
      */
-    public function __construct(\Swagger\Client\ApiClient $apiClient = null)
+    public function __construct(\CollingMedia\StackAdapt\ApiClient $apiClient = null)
     {
         if ($apiClient == null) {
             $apiClient = new ApiClient();
@@ -82,7 +82,7 @@ class CampaignsApi
     /**
      * Get API client
      *
-     * @return \Swagger\Client\ApiClient get the API client
+     * @return \CollingMedia\StackAdapt\ApiClient get the API client
      */
     public function getApiClient()
     {
@@ -92,11 +92,11 @@ class CampaignsApi
     /**
      * Set the API client
      *
-     * @param \Swagger\Client\ApiClient $apiClient set the API client
+     * @param \CollingMedia\StackAdapt\ApiClient $apiClient set the API client
      *
      * @return CampaignsApi
      */
-    public function setApiClient(\Swagger\Client\ApiClient $apiClient)
+    public function setApiClient(\CollingMedia\StackAdapt\ApiClient $apiClient)
     {
         $this->apiClient = $apiClient;
         return $this;
@@ -107,8 +107,8 @@ class CampaignsApi
      *
      * Return all campaigns
      *
-     * @return \Swagger\Client\Model\CampaignResponse[]
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @return \CollingMedia\StackAdapt\Model\CampaignResponse[]
+     * @throws \CollingMedia\StackAdapt\ApiException on non-2xx response
      */
     public function findCampaigns()
     {
@@ -121,8 +121,8 @@ class CampaignsApi
      *
      * Return all campaigns
      *
-     * @return Array of \Swagger\Client\Model\CampaignResponse[], HTTP status code, HTTP response headers (array of strings)
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @return Array of \CollingMedia\StackAdapt\Model\CampaignResponse[], HTTP status code, HTTP response headers (array of strings)
+     * @throws \CollingMedia\StackAdapt\ApiException on non-2xx response
      */
     public function findCampaignsWithHttpInfo()
     {
@@ -166,19 +166,19 @@ class CampaignsApi
                 $queryParams,
                 $httpBody,
                 $headerParams,
-                '\Swagger\Client\Model\CampaignResponse[]',
+                '\CollingMedia\StackAdapt\Model\CampaignResponse[]',
                 '/campaigns'
             );
 
-            return array($this->apiClient->getSerializer()->deserialize($response, '\Swagger\Client\Model\CampaignResponse[]', $httpHeader, 'campaign'), $statusCode, $httpHeader);
+            return array($this->apiClient->getSerializer()->deserialize($response, '\CollingMedia\StackAdapt\Model\CampaignResponse[]', $httpHeader, 'campaign'), $statusCode, $httpHeader);
         } catch (ApiException $e) {
             switch ($e->getCode()) {
                 case 200:
-                    $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\Swagger\Client\Model\CampaignResponse[]', $e->getResponseHeaders());
+                    $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\CollingMedia\StackAdapt\Model\CampaignResponse[]', $e->getResponseHeaders());
                     $e->setResponseObject($data);
                     break;
                 case 400:
-                    $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\Swagger\Client\Model\ErrorModel', $e->getResponseHeaders());
+                    $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\CollingMedia\StackAdapt\Model\ErrorModel', $e->getResponseHeaders());
                     $e->setResponseObject($data);
                     break;
             }

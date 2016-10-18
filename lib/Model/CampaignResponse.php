@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  Swagger\Client
+ * @package  CollingMedia\StackAdapt
  * @author   http://github.com/swagger-api/swagger-codegen
  * @license  http://www.apache.org/licenses/LICENSE-2.0 Apache Licene v2
  * @link     https://github.com/swagger-api/swagger-codegen
@@ -48,7 +48,7 @@ use \ArrayAccess;
  *
  * @category    Class */
 /** 
- * @package     Swagger\Client
+ * @package     CollingMedia\StackAdapt
  * @author      http://github.com/swagger-api/swagger-codegen
  * @license     http://www.apache.org/licenses/LICENSE-2.0 Apache Licene v2
  * @link        https://github.com/swagger-api/swagger-codegen
@@ -94,9 +94,9 @@ class CampaignResponse implements ArrayAccess
         'freq_cap_time' => 'int',
         'language_options' => 'string[]',
         'use_dma' => 'bool',
-        'campaigns_conversion_trackers' => '\Swagger\Client\Model\ConversionTracker[]',
+        'campaigns_conversion_trackers' => '\CollingMedia\StackAdapt\Model\ConversionTracker[]',
         'allow_iframe_engagement' => 'bool',
-        'all_native_ads' => '\Swagger\Client\Model\NativeAdResponse[]'
+        'all_native_ads' => '\CollingMedia\StackAdapt\Model\NativeAdResponse[]'
     );
 
     public static function swaggerTypes()
@@ -1057,7 +1057,7 @@ class CampaignResponse implements ArrayAccess
 
     /**
      * Gets campaigns_conversion_trackers
-     * @return \Swagger\Client\Model\ConversionTracker[]
+     * @return \CollingMedia\StackAdapt\Model\ConversionTracker[]
      */
     public function getCampaignsConversionTrackers()
     {
@@ -1066,7 +1066,7 @@ class CampaignResponse implements ArrayAccess
 
     /**
      * Sets campaigns_conversion_trackers
-     * @param \Swagger\Client\Model\ConversionTracker[] $campaigns_conversion_trackers
+     * @param \CollingMedia\StackAdapt\Model\ConversionTracker[] $campaigns_conversion_trackers
      * @return $this
      */
     public function setCampaignsConversionTrackers($campaigns_conversion_trackers)
@@ -1099,7 +1099,7 @@ class CampaignResponse implements ArrayAccess
 
     /**
      * Gets all_native_ads
-     * @return \Swagger\Client\Model\NativeAdResponse[]
+     * @return \CollingMedia\StackAdapt\Model\NativeAdResponse[]
      */
     public function getAllNativeAds()
     {
@@ -1108,7 +1108,7 @@ class CampaignResponse implements ArrayAccess
 
     /**
      * Sets all_native_ads
-     * @param \Swagger\Client\Model\NativeAdResponse[] $all_native_ads Native ad model
+     * @param \CollingMedia\StackAdapt\Model\NativeAdResponse[] $all_native_ads Native ad model
      * @return $this
      */
     public function setAllNativeAds($all_native_ads)
@@ -1169,10 +1169,10 @@ class CampaignResponse implements ArrayAccess
     public function __toString()
     {
         if (defined('JSON_PRETTY_PRINT')) { // use JSON pretty print
-            return json_encode(\Swagger\Client\ObjectSerializer::sanitizeForSerialization($this), JSON_PRETTY_PRINT);
+            return json_encode(\CollingMedia\StackAdapt\ObjectSerializer::sanitizeForSerialization($this), JSON_PRETTY_PRINT);
         }
 
-        return json_encode(\Swagger\Client\ObjectSerializer::sanitizeForSerialization($this));
+        return json_encode(\CollingMedia\StackAdapt\ObjectSerializer::sanitizeForSerialization($this));
     }
 }
 

@@ -15,7 +15,7 @@ Name | Type | Description | Notes
 **start_date** | [**\DateTime**](Date.md) | The timestamp in UTC when the campaign will begin. | [optional] 
 **end_date** | [**\DateTime**](Date.md) | The timestamp in UTC when the campaign will end. | [optional] 
 **category_options** | **string[]** | The list of IAB categories to be included in the campaign. &lt;a class&#x3D;\&quot;campaign-link\&quot; target&#x3D;\&quot;_blank\&quot; href&#x3D;\&quot;https://docs.google.com/document/d/1oZEWp_b9ccLsPNbTJf-w5ENHSSHiAjVQVcfjUh7LBsg/edit?usp&#x3D;sharing#bookmark&#x3D;id.wwmc2j4w9weo\&quot;&gt;Click Here&lt;/a&gt; for full list of IB categories. Leave empty to choose all. | [optional] 
-**advertiser** | [**\Swagger\Client\Model\SubAdvertiser**](SubAdvertiser.md) |  | [optional] 
+**advertiser** | [**\CollingMedia\StackAdapt\Model\SubAdvertiser**](SubAdvertiser.md) |  | [optional] 
 **country_options** | **string[]** | The list of ISO 3166-1 alpha-2 country codes to be included in the campaign. | [optional] 
 **us_state_options** | **string[]** | The list of ISO 3166-2 US state codes to be included in the campaign. | [optional] 
 **canada_province_options** | **string[]** | The list of ISO 3166-2 Canadian province codes to be included in the campaign. | [optional] 
@@ -29,9 +29,9 @@ Name | Type | Description | Notes
 **freq_cap_time** | **int** | The length of time in milliseconds when the user frequency cap counter restarts. | [optional] [default to 86400000]
 **language_options** | **string[]** | A list of language(s) that are targeted. The campaign will only target sites or users whose language is included in the list. | [optional] 
 **use_dma** | **bool** | Enable campaign to target city by Designated Market Area (DMA). | [optional] 
-**conversion_trackers** | [**\Swagger\Client\Model\ConversionTracker[]**](ConversionTracker.md) |  | [optional] 
+**conversion_trackers** | [**\CollingMedia\StackAdapt\Model\ConversionTracker[]**](ConversionTracker.md) |  | [optional] 
 **allow_iframe_engagement** | **bool** | Allow engagement tracking by placing add within an iframe | [optional] [default to true]
-**all_native_ads** | [**\Swagger\Client\Model\NativeAdRequest[]**](NativeAdRequest.md) | Native ad model | 
+**all_native_ads** | [**\CollingMedia\StackAdapt\Model\NativeAdRequest[]**](NativeAdRequest.md) | Native ad model | 
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
 

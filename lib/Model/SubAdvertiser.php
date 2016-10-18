@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  Swagger\Client
+ * @package  CollingMedia\StackAdapt
  * @author   http://github.com/swagger-api/swagger-codegen
  * @license  http://www.apache.org/licenses/LICENSE-2.0 Apache Licene v2
  * @link     https://github.com/swagger-api/swagger-codegen
@@ -48,7 +48,7 @@ use \ArrayAccess;
  *
  * @category    Class */
 /** 
- * @package     Swagger\Client
+ * @package     CollingMedia\StackAdapt
  * @author      http://github.com/swagger-api/swagger-codegen
  * @license     http://www.apache.org/licenses/LICENSE-2.0 Apache Licene v2
  * @link        https://github.com/swagger-api/swagger-codegen
@@ -68,7 +68,7 @@ class SubAdvertiser implements ArrayAccess
     protected static $swaggerTypes = array(
         'id' => 'int',
         'name' => 'string',
-        'insertion_order' => '\Swagger\Client\Model\LineItem'
+        'insertion_order' => '\CollingMedia\StackAdapt\Model\LineItem'
     );
 
     public static function swaggerTypes()
@@ -209,7 +209,7 @@ class SubAdvertiser implements ArrayAccess
 
     /**
      * Gets insertion_order
-     * @return \Swagger\Client\Model\LineItem
+     * @return \CollingMedia\StackAdapt\Model\LineItem
      */
     public function getInsertionOrder()
     {
@@ -218,7 +218,7 @@ class SubAdvertiser implements ArrayAccess
 
     /**
      * Sets insertion_order
-     * @param \Swagger\Client\Model\LineItem $insertion_order
+     * @param \CollingMedia\StackAdapt\Model\LineItem $insertion_order
      * @return $this
      */
     public function setInsertionOrder($insertion_order)
@@ -279,10 +279,10 @@ class SubAdvertiser implements ArrayAccess
     public function __toString()
     {
         if (defined('JSON_PRETTY_PRINT')) { // use JSON pretty print
-            return json_encode(\Swagger\Client\ObjectSerializer::sanitizeForSerialization($this), JSON_PRETTY_PRINT);
+            return json_encode(\CollingMedia\StackAdapt\ObjectSerializer::sanitizeForSerialization($this), JSON_PRETTY_PRINT);
         }
 
-        return json_encode(\Swagger\Client\ObjectSerializer::sanitizeForSerialization($this));
+        return json_encode(\CollingMedia\StackAdapt\ObjectSerializer::sanitizeForSerialization($this));
     }
 }
 

@@ -1,4 +1,4 @@
-# Swagger\Client\NativeadApi
+# CollingMedia\StackAdapt\NativeadApi
 
 All URIs are relative to *http://api.stackadapt.com/service/v2*
 
@@ -11,7 +11,7 @@ Method | HTTP request | Description
 
 
 # **addNativeAd**
-> \Swagger\Client\Model\NativeAdResponse addNativeAd($body)
+> \CollingMedia\StackAdapt\Model\NativeAdResponse addNativeAd($body)
 
 Create new native ad
 
@@ -23,16 +23,16 @@ Creates a new native ad
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure API key authorization: api_key
-Swagger\Client\Configuration::getDefaultConfiguration()->setApiKey('api_key', 'YOUR_API_KEY');
+CollingMedia\StackAdapt\Configuration::getDefaultConfiguration()->setApiKey('api_key', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// Swagger\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('api_key', 'Bearer');
+// CollingMedia\StackAdapt\Configuration::getDefaultConfiguration()->setApiKeyPrefix('api_key', 'Bearer');
 // Configure API key authorization: X-Authorization
-Swagger\Client\Configuration::getDefaultConfiguration()->setApiKey('X-Authorization', 'YOUR_API_KEY');
+CollingMedia\StackAdapt\Configuration::getDefaultConfiguration()->setApiKey('X-Authorization', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// Swagger\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('X-Authorization', 'Bearer');
+// CollingMedia\StackAdapt\Configuration::getDefaultConfiguration()->setApiKeyPrefix('X-Authorization', 'Bearer');
 
-$api_instance = new Swagger\Client\Api\NativeadApi();
-$body = new \Swagger\Client\Model\NativeAdRequest(); // \Swagger\Client\Model\NativeAdRequest | 
+$api_instance = new CollingMedia\StackAdapt\Api\NativeadApi();
+$body = new \CollingMedia\StackAdapt\Model\NativeAdRequest(); // \CollingMedia\StackAdapt\Model\NativeAdRequest | 
 
 try {
     $result = $api_instance->addNativeAd($body);
@@ -47,11 +47,11 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **body** | [**\Swagger\Client\Model\NativeAdRequest**](../Model/\Swagger\Client\Model\NativeAdRequest.md)|  | [optional]
+ **body** | [**\CollingMedia\StackAdapt\Model\NativeAdRequest**](../Model/\CollingMedia\StackAdapt\Model\NativeAdRequest.md)|  | [optional]
 
 ### Return type
 
-[**\Swagger\Client\Model\NativeAdResponse**](../Model/NativeAdResponse.md)
+[**\CollingMedia\StackAdapt\Model\NativeAdResponse**](../Model/NativeAdResponse.md)
 
 ### Authorization
 
@@ -77,15 +77,15 @@ Deletes an existing native ad
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure API key authorization: api_key
-Swagger\Client\Configuration::getDefaultConfiguration()->setApiKey('api_key', 'YOUR_API_KEY');
+CollingMedia\StackAdapt\Configuration::getDefaultConfiguration()->setApiKey('api_key', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// Swagger\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('api_key', 'Bearer');
+// CollingMedia\StackAdapt\Configuration::getDefaultConfiguration()->setApiKeyPrefix('api_key', 'Bearer');
 // Configure API key authorization: X-Authorization
-Swagger\Client\Configuration::getDefaultConfiguration()->setApiKey('X-Authorization', 'YOUR_API_KEY');
+CollingMedia\StackAdapt\Configuration::getDefaultConfiguration()->setApiKey('X-Authorization', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// Swagger\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('X-Authorization', 'Bearer');
+// CollingMedia\StackAdapt\Configuration::getDefaultConfiguration()->setApiKeyPrefix('X-Authorization', 'Bearer');
 
-$api_instance = new Swagger\Client\Api\NativeadApi();
+$api_instance = new CollingMedia\StackAdapt\Api\NativeadApi();
 $id = 56; // int | Id of campaign
 
 try {
@@ -118,7 +118,7 @@ void (empty response body)
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **findNativeAd**
-> \Swagger\Client\Model\NativeAdResponse findNativeAd($id)
+> \CollingMedia\StackAdapt\Model\NativeAdResponse findNativeAd($id)
 
 Find native ad by id
 
@@ -130,15 +130,15 @@ Returns a specific native ad with the corresponding id from the system that the 
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure API key authorization: api_key
-Swagger\Client\Configuration::getDefaultConfiguration()->setApiKey('api_key', 'YOUR_API_KEY');
+CollingMedia\StackAdapt\Configuration::getDefaultConfiguration()->setApiKey('api_key', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// Swagger\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('api_key', 'Bearer');
+// CollingMedia\StackAdapt\Configuration::getDefaultConfiguration()->setApiKeyPrefix('api_key', 'Bearer');
 // Configure API key authorization: X-Authorization
-Swagger\Client\Configuration::getDefaultConfiguration()->setApiKey('X-Authorization', 'YOUR_API_KEY');
+CollingMedia\StackAdapt\Configuration::getDefaultConfiguration()->setApiKey('X-Authorization', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// Swagger\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('X-Authorization', 'Bearer');
+// CollingMedia\StackAdapt\Configuration::getDefaultConfiguration()->setApiKeyPrefix('X-Authorization', 'Bearer');
 
-$api_instance = new Swagger\Client\Api\NativeadApi();
+$api_instance = new CollingMedia\StackAdapt\Api\NativeadApi();
 $id = 56; // int | Id of campaign
 
 try {
@@ -158,7 +158,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Swagger\Client\Model\NativeAdResponse**](../Model/NativeAdResponse.md)
+[**\CollingMedia\StackAdapt\Model\NativeAdResponse**](../Model/NativeAdResponse.md)
 
 ### Authorization
 
@@ -172,7 +172,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **updateNativeAd**
-> \Swagger\Client\Model\NativeAdResponse updateNativeAd($id, $body)
+> \CollingMedia\StackAdapt\Model\NativeAdResponse updateNativeAd($id, $body)
 
 Update existing native ad
 
@@ -184,17 +184,17 @@ Updates an existing native ad
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure API key authorization: api_key
-Swagger\Client\Configuration::getDefaultConfiguration()->setApiKey('api_key', 'YOUR_API_KEY');
+CollingMedia\StackAdapt\Configuration::getDefaultConfiguration()->setApiKey('api_key', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// Swagger\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('api_key', 'Bearer');
+// CollingMedia\StackAdapt\Configuration::getDefaultConfiguration()->setApiKeyPrefix('api_key', 'Bearer');
 // Configure API key authorization: X-Authorization
-Swagger\Client\Configuration::getDefaultConfiguration()->setApiKey('X-Authorization', 'YOUR_API_KEY');
+CollingMedia\StackAdapt\Configuration::getDefaultConfiguration()->setApiKey('X-Authorization', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// Swagger\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('X-Authorization', 'Bearer');
+// CollingMedia\StackAdapt\Configuration::getDefaultConfiguration()->setApiKeyPrefix('X-Authorization', 'Bearer');
 
-$api_instance = new Swagger\Client\Api\NativeadApi();
+$api_instance = new CollingMedia\StackAdapt\Api\NativeadApi();
 $id = 56; // int | Id of campaign
-$body = new \Swagger\Client\Model\NativeAdRequest(); // \Swagger\Client\Model\NativeAdRequest | 
+$body = new \CollingMedia\StackAdapt\Model\NativeAdRequest(); // \CollingMedia\StackAdapt\Model\NativeAdRequest | 
 
 try {
     $result = $api_instance->updateNativeAd($id, $body);
@@ -210,11 +210,11 @@ try {
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **id** | **int**| Id of campaign |
- **body** | [**\Swagger\Client\Model\NativeAdRequest**](../Model/\Swagger\Client\Model\NativeAdRequest.md)|  | [optional]
+ **body** | [**\CollingMedia\StackAdapt\Model\NativeAdRequest**](../Model/\CollingMedia\StackAdapt\Model\NativeAdRequest.md)|  | [optional]
 
 ### Return type
 
-[**\Swagger\Client\Model\NativeAdResponse**](../Model/NativeAdResponse.md)
+[**\CollingMedia\StackAdapt\Model\NativeAdResponse**](../Model/NativeAdResponse.md)
 
 ### Authorization
 

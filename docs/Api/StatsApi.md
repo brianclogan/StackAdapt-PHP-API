@@ -1,4 +1,4 @@
-# Swagger\Client\StatsApi
+# CollingMedia\StackAdapt\StatsApi
 
 All URIs are relative to *http://api.stackadapt.com/service/v2*
 
@@ -21,15 +21,15 @@ Returns stats on user query. Reponse depends on what stats you query for we reco
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure API key authorization: api_key
-Swagger\Client\Configuration::getDefaultConfiguration()->setApiKey('api_key', 'YOUR_API_KEY');
+CollingMedia\StackAdapt\Configuration::getDefaultConfiguration()->setApiKey('api_key', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// Swagger\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('api_key', 'Bearer');
+// CollingMedia\StackAdapt\Configuration::getDefaultConfiguration()->setApiKeyPrefix('api_key', 'Bearer');
 // Configure API key authorization: X-Authorization
-Swagger\Client\Configuration::getDefaultConfiguration()->setApiKey('X-Authorization', 'YOUR_API_KEY');
+CollingMedia\StackAdapt\Configuration::getDefaultConfiguration()->setApiKey('X-Authorization', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// Swagger\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('X-Authorization', 'Bearer');
+// CollingMedia\StackAdapt\Configuration::getDefaultConfiguration()->setApiKeyPrefix('X-Authorization', 'Bearer');
 
-$api_instance = new Swagger\Client\Api\StatsApi();
+$api_instance = new CollingMedia\StackAdapt\Api\StatsApi();
 $resource = "resource_example"; // string | The resource type to retrieve. Valid resources are: \"campaign\", \"conversion_tracker\" \"line_item\", \"native_ad\", \"advertiser\", or \"buyer_account\" (total account stats)
 $type = "type_example"; // string | The type of stats to retrieve. Valid types are: \"domain\", \"total\", \"daily\", and \"hourly\". \"domain\" type is only supported if resource is \"campaign\"
 $id = 56; // int | Id of resource
@@ -86,15 +86,15 @@ Returns stats on user query. Reponse depends on what stats you query for we reco
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure API key authorization: api_key
-Swagger\Client\Configuration::getDefaultConfiguration()->setApiKey('api_key', 'YOUR_API_KEY');
+CollingMedia\StackAdapt\Configuration::getDefaultConfiguration()->setApiKey('api_key', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// Swagger\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('api_key', 'Bearer');
+// CollingMedia\StackAdapt\Configuration::getDefaultConfiguration()->setApiKeyPrefix('api_key', 'Bearer');
 // Configure API key authorization: X-Authorization
-Swagger\Client\Configuration::getDefaultConfiguration()->setApiKey('X-Authorization', 'YOUR_API_KEY');
+CollingMedia\StackAdapt\Configuration::getDefaultConfiguration()->setApiKey('X-Authorization', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// Swagger\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('X-Authorization', 'Bearer');
+// CollingMedia\StackAdapt\Configuration::getDefaultConfiguration()->setApiKeyPrefix('X-Authorization', 'Bearer');
 
-$api_instance = new Swagger\Client\Api\StatsApi();
+$api_instance = new CollingMedia\StackAdapt\Api\StatsApi();
 $resource = "resource_example"; // string | The resource type to retrieve. Valid resources are: \"campaign\", \"conversion_tracker\" \"line_item\", \"native_ad\", \"advertiser\", or \"buyer_account\" (total account stats)
 $type = "type_example"; // string | The type of stats to retrieve. Valid types are: \"domain\", \"total\", \"daily\", and \"hourly\". \"domain\" type is only supported if resource is \"campaign\"
 $id = 56; // int | Id of resource

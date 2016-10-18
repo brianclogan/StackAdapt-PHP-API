@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  Swagger\Client
+ * @package  CollingMedia\StackAdapt
  * @author   http://github.com/swagger-api/swagger-codegen
  * @license  http://www.apache.org/licenses/LICENSE-2.0 Apache Licene v2
  * @link     https://github.com/swagger-api/swagger-codegen
@@ -48,7 +48,7 @@ use \ArrayAccess;
  *
  * @category    Class */
 /** 
- * @package     Swagger\Client
+ * @package     CollingMedia\StackAdapt
  * @author      http://github.com/swagger-api/swagger-codegen
  * @license     http://www.apache.org/licenses/LICENSE-2.0 Apache Licene v2
  * @link        https://github.com/swagger-api/swagger-codegen
@@ -78,7 +78,7 @@ class CampaignRequest implements ArrayAccess
         'start_date' => '\DateTime',
         'end_date' => '\DateTime',
         'category_options' => 'string[]',
-        'advertiser' => '\Swagger\Client\Model\SubAdvertiser',
+        'advertiser' => '\CollingMedia\StackAdapt\Model\SubAdvertiser',
         'country_options' => 'string[]',
         'us_state_options' => 'string[]',
         'canada_province_options' => 'string[]',
@@ -92,9 +92,9 @@ class CampaignRequest implements ArrayAccess
         'freq_cap_time' => 'int',
         'language_options' => 'string[]',
         'use_dma' => 'bool',
-        'conversion_trackers' => '\Swagger\Client\Model\ConversionTracker[]',
+        'conversion_trackers' => '\CollingMedia\StackAdapt\Model\ConversionTracker[]',
         'allow_iframe_engagement' => 'bool',
-        'all_native_ads' => '\Swagger\Client\Model\NativeAdRequest[]'
+        'all_native_ads' => '\CollingMedia\StackAdapt\Model\NativeAdRequest[]'
     );
 
     public static function swaggerTypes()
@@ -720,7 +720,7 @@ class CampaignRequest implements ArrayAccess
 
     /**
      * Gets advertiser
-     * @return \Swagger\Client\Model\SubAdvertiser
+     * @return \CollingMedia\StackAdapt\Model\SubAdvertiser
      */
     public function getAdvertiser()
     {
@@ -729,7 +729,7 @@ class CampaignRequest implements ArrayAccess
 
     /**
      * Sets advertiser
-     * @param \Swagger\Client\Model\SubAdvertiser $advertiser
+     * @param \CollingMedia\StackAdapt\Model\SubAdvertiser $advertiser
      * @return $this
      */
     public function setAdvertiser($advertiser)
@@ -1022,7 +1022,7 @@ class CampaignRequest implements ArrayAccess
 
     /**
      * Gets conversion_trackers
-     * @return \Swagger\Client\Model\ConversionTracker[]
+     * @return \CollingMedia\StackAdapt\Model\ConversionTracker[]
      */
     public function getConversionTrackers()
     {
@@ -1031,7 +1031,7 @@ class CampaignRequest implements ArrayAccess
 
     /**
      * Sets conversion_trackers
-     * @param \Swagger\Client\Model\ConversionTracker[] $conversion_trackers
+     * @param \CollingMedia\StackAdapt\Model\ConversionTracker[] $conversion_trackers
      * @return $this
      */
     public function setConversionTrackers($conversion_trackers)
@@ -1064,7 +1064,7 @@ class CampaignRequest implements ArrayAccess
 
     /**
      * Gets all_native_ads
-     * @return \Swagger\Client\Model\NativeAdRequest[]
+     * @return \CollingMedia\StackAdapt\Model\NativeAdRequest[]
      */
     public function getAllNativeAds()
     {
@@ -1073,7 +1073,7 @@ class CampaignRequest implements ArrayAccess
 
     /**
      * Sets all_native_ads
-     * @param \Swagger\Client\Model\NativeAdRequest[] $all_native_ads Native ad model
+     * @param \CollingMedia\StackAdapt\Model\NativeAdRequest[] $all_native_ads Native ad model
      * @return $this
      */
     public function setAllNativeAds($all_native_ads)
@@ -1134,10 +1134,10 @@ class CampaignRequest implements ArrayAccess
     public function __toString()
     {
         if (defined('JSON_PRETTY_PRINT')) { // use JSON pretty print
-            return json_encode(\Swagger\Client\ObjectSerializer::sanitizeForSerialization($this), JSON_PRETTY_PRINT);
+            return json_encode(\CollingMedia\StackAdapt\ObjectSerializer::sanitizeForSerialization($this), JSON_PRETTY_PRINT);
         }
 
-        return json_encode(\Swagger\Client\ObjectSerializer::sanitizeForSerialization($this));
+        return json_encode(\CollingMedia\StackAdapt\ObjectSerializer::sanitizeForSerialization($this));
     }
 }
 

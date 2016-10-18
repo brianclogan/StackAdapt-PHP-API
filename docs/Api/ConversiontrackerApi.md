@@ -1,4 +1,4 @@
-# Swagger\Client\ConversiontrackerApi
+# CollingMedia\StackAdapt\ConversiontrackerApi
 
 All URIs are relative to *http://api.stackadapt.com/service/v2*
 
@@ -11,7 +11,7 @@ Method | HTTP request | Description
 
 
 # **createConversionTracker**
-> \Swagger\Client\Model\ConversionTracker createConversionTracker($body)
+> \CollingMedia\StackAdapt\Model\ConversionTracker createConversionTracker($body)
 
 Create new conversion tracker
 
@@ -23,16 +23,16 @@ Creates a new conversion_tracker
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure API key authorization: api_key
-Swagger\Client\Configuration::getDefaultConfiguration()->setApiKey('api_key', 'YOUR_API_KEY');
+CollingMedia\StackAdapt\Configuration::getDefaultConfiguration()->setApiKey('api_key', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// Swagger\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('api_key', 'Bearer');
+// CollingMedia\StackAdapt\Configuration::getDefaultConfiguration()->setApiKeyPrefix('api_key', 'Bearer');
 // Configure API key authorization: X-Authorization
-Swagger\Client\Configuration::getDefaultConfiguration()->setApiKey('X-Authorization', 'YOUR_API_KEY');
+CollingMedia\StackAdapt\Configuration::getDefaultConfiguration()->setApiKey('X-Authorization', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// Swagger\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('X-Authorization', 'Bearer');
+// CollingMedia\StackAdapt\Configuration::getDefaultConfiguration()->setApiKeyPrefix('X-Authorization', 'Bearer');
 
-$api_instance = new Swagger\Client\Api\ConversiontrackerApi();
-$body = new \Swagger\Client\Model\ConversionTracker(); // \Swagger\Client\Model\ConversionTracker | 
+$api_instance = new CollingMedia\StackAdapt\Api\ConversiontrackerApi();
+$body = new \CollingMedia\StackAdapt\Model\ConversionTracker(); // \CollingMedia\StackAdapt\Model\ConversionTracker | 
 
 try {
     $result = $api_instance->createConversionTracker($body);
@@ -47,11 +47,11 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **body** | [**\Swagger\Client\Model\ConversionTracker**](../Model/\Swagger\Client\Model\ConversionTracker.md)|  | [optional]
+ **body** | [**\CollingMedia\StackAdapt\Model\ConversionTracker**](../Model/\CollingMedia\StackAdapt\Model\ConversionTracker.md)|  | [optional]
 
 ### Return type
 
-[**\Swagger\Client\Model\ConversionTracker**](../Model/ConversionTracker.md)
+[**\CollingMedia\StackAdapt\Model\ConversionTracker**](../Model/ConversionTracker.md)
 
 ### Authorization
 
@@ -77,15 +77,15 @@ Deletes a conversion tracker from the system that the user has access to
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure API key authorization: api_key
-Swagger\Client\Configuration::getDefaultConfiguration()->setApiKey('api_key', 'YOUR_API_KEY');
+CollingMedia\StackAdapt\Configuration::getDefaultConfiguration()->setApiKey('api_key', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// Swagger\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('api_key', 'Bearer');
+// CollingMedia\StackAdapt\Configuration::getDefaultConfiguration()->setApiKeyPrefix('api_key', 'Bearer');
 // Configure API key authorization: X-Authorization
-Swagger\Client\Configuration::getDefaultConfiguration()->setApiKey('X-Authorization', 'YOUR_API_KEY');
+CollingMedia\StackAdapt\Configuration::getDefaultConfiguration()->setApiKey('X-Authorization', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// Swagger\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('X-Authorization', 'Bearer');
+// CollingMedia\StackAdapt\Configuration::getDefaultConfiguration()->setApiKeyPrefix('X-Authorization', 'Bearer');
 
-$api_instance = new Swagger\Client\Api\ConversiontrackerApi();
+$api_instance = new CollingMedia\StackAdapt\Api\ConversiontrackerApi();
 $id = 56; // int | Id of conversion_tracker
 
 try {
@@ -118,7 +118,7 @@ void (empty response body)
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **findConversionTracker**
-> \Swagger\Client\Model\ConversionTracker findConversionTracker($id)
+> \CollingMedia\StackAdapt\Model\ConversionTracker findConversionTracker($id)
 
 Find conversion tracker by id
 
@@ -130,15 +130,15 @@ Returns a conversion tracker from the system that the user has access to
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure API key authorization: api_key
-Swagger\Client\Configuration::getDefaultConfiguration()->setApiKey('api_key', 'YOUR_API_KEY');
+CollingMedia\StackAdapt\Configuration::getDefaultConfiguration()->setApiKey('api_key', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// Swagger\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('api_key', 'Bearer');
+// CollingMedia\StackAdapt\Configuration::getDefaultConfiguration()->setApiKeyPrefix('api_key', 'Bearer');
 // Configure API key authorization: X-Authorization
-Swagger\Client\Configuration::getDefaultConfiguration()->setApiKey('X-Authorization', 'YOUR_API_KEY');
+CollingMedia\StackAdapt\Configuration::getDefaultConfiguration()->setApiKey('X-Authorization', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// Swagger\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('X-Authorization', 'Bearer');
+// CollingMedia\StackAdapt\Configuration::getDefaultConfiguration()->setApiKeyPrefix('X-Authorization', 'Bearer');
 
-$api_instance = new Swagger\Client\Api\ConversiontrackerApi();
+$api_instance = new CollingMedia\StackAdapt\Api\ConversiontrackerApi();
 $id = 56; // int | Id of conversion_tracker
 
 try {
@@ -158,7 +158,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Swagger\Client\Model\ConversionTracker**](../Model/ConversionTracker.md)
+[**\CollingMedia\StackAdapt\Model\ConversionTracker**](../Model/ConversionTracker.md)
 
 ### Authorization
 
@@ -172,7 +172,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **updateConversionTracker**
-> \Swagger\Client\Model\ConversionTracker updateConversionTracker($id, $body)
+> \CollingMedia\StackAdapt\Model\ConversionTracker updateConversionTracker($id, $body)
 
 Update exisiting conversion tracker
 
@@ -184,17 +184,17 @@ Updates a new conversion_tracker
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure API key authorization: api_key
-Swagger\Client\Configuration::getDefaultConfiguration()->setApiKey('api_key', 'YOUR_API_KEY');
+CollingMedia\StackAdapt\Configuration::getDefaultConfiguration()->setApiKey('api_key', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// Swagger\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('api_key', 'Bearer');
+// CollingMedia\StackAdapt\Configuration::getDefaultConfiguration()->setApiKeyPrefix('api_key', 'Bearer');
 // Configure API key authorization: X-Authorization
-Swagger\Client\Configuration::getDefaultConfiguration()->setApiKey('X-Authorization', 'YOUR_API_KEY');
+CollingMedia\StackAdapt\Configuration::getDefaultConfiguration()->setApiKey('X-Authorization', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// Swagger\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('X-Authorization', 'Bearer');
+// CollingMedia\StackAdapt\Configuration::getDefaultConfiguration()->setApiKeyPrefix('X-Authorization', 'Bearer');
 
-$api_instance = new Swagger\Client\Api\ConversiontrackerApi();
+$api_instance = new CollingMedia\StackAdapt\Api\ConversiontrackerApi();
 $id = 56; // int | Id of conversion_tracker
-$body = new \Swagger\Client\Model\ConversionTracker(); // \Swagger\Client\Model\ConversionTracker | 
+$body = new \CollingMedia\StackAdapt\Model\ConversionTracker(); // \CollingMedia\StackAdapt\Model\ConversionTracker | 
 
 try {
     $result = $api_instance->updateConversionTracker($id, $body);
@@ -210,11 +210,11 @@ try {
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **id** | **int**| Id of conversion_tracker |
- **body** | [**\Swagger\Client\Model\ConversionTracker**](../Model/\Swagger\Client\Model\ConversionTracker.md)|  | [optional]
+ **body** | [**\CollingMedia\StackAdapt\Model\ConversionTracker**](../Model/\CollingMedia\StackAdapt\Model\ConversionTracker.md)|  | [optional]
 
 ### Return type
 
-[**\Swagger\Client\Model\ConversionTracker**](../Model/ConversionTracker.md)
+[**\CollingMedia\StackAdapt\Model\ConversionTracker**](../Model/ConversionTracker.md)
 
 ### Authorization
 

@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  Swagger\Client
+ * @package  CollingMedia\StackAdapt
  * @author   http://github.com/swagger-api/swagger-codegen
  * @license  http://www.apache.org/licenses/LICENSE-2.0 Apache Licene v2
  * @link     https://github.com/swagger-api/swagger-codegen
@@ -48,7 +48,7 @@ use \ArrayAccess;
  *
  * @category    Class */
 /** 
- * @package     Swagger\Client
+ * @package     CollingMedia\StackAdapt
  * @author      http://github.com/swagger-api/swagger-codegen
  * @license     http://www.apache.org/licenses/LICENSE-2.0 Apache Licene v2
  * @link        https://github.com/swagger-api/swagger-codegen
@@ -94,7 +94,7 @@ class Campaign implements ArrayAccess
         'freq_cap_time' => 'int',
         'language_options' => 'string[]',
         'use_dma' => 'bool',
-        'conversion_trackers' => '\Swagger\Client\Model\ConversionTracker[]',
+        'conversion_trackers' => '\CollingMedia\StackAdapt\Model\ConversionTracker[]',
         'allow_iframe_engagement' => 'bool'
     );
 
@@ -1081,7 +1081,7 @@ class Campaign implements ArrayAccess
 
     /**
      * Gets conversion_trackers
-     * @return \Swagger\Client\Model\ConversionTracker[]
+     * @return \CollingMedia\StackAdapt\Model\ConversionTracker[]
      */
     public function getConversionTrackers()
     {
@@ -1090,7 +1090,7 @@ class Campaign implements ArrayAccess
 
     /**
      * Sets conversion_trackers
-     * @param \Swagger\Client\Model\ConversionTracker[] $conversion_trackers
+     * @param \CollingMedia\StackAdapt\Model\ConversionTracker[] $conversion_trackers
      * @return $this
      */
     public function setConversionTrackers($conversion_trackers)
@@ -1172,10 +1172,10 @@ class Campaign implements ArrayAccess
     public function __toString()
     {
         if (defined('JSON_PRETTY_PRINT')) { // use JSON pretty print
-            return json_encode(\Swagger\Client\ObjectSerializer::sanitizeForSerialization($this), JSON_PRETTY_PRINT);
+            return json_encode(\CollingMedia\StackAdapt\ObjectSerializer::sanitizeForSerialization($this), JSON_PRETTY_PRINT);
         }
 
-        return json_encode(\Swagger\Client\ObjectSerializer::sanitizeForSerialization($this));
+        return json_encode(\CollingMedia\StackAdapt\ObjectSerializer::sanitizeForSerialization($this));
     }
 }
 

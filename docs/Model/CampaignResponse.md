@@ -31,9 +31,9 @@ Name | Type | Description | Notes
 **freq_cap_time** | **int** | The length of time in milliseconds when the user frequency cap counter restarts. | [optional] [default to 86400000]
 **language_options** | **string[]** | A list of language(s) that are targeted. The campaign will only target sites or users whose language is included in the list. | [optional] 
 **use_dma** | **bool** | Enable campaign to target city by Designated Market Area (DMA). | [optional] 
-**campaigns_conversion_trackers** | [**\Swagger\Client\Model\ConversionTracker[]**](ConversionTracker.md) |  | [optional] 
+**campaigns_conversion_trackers** | [**\CollingMedia\StackAdapt\Model\ConversionTracker[]**](ConversionTracker.md) |  | [optional] 
 **allow_iframe_engagement** | **bool** | Allow engagement tracking by placing add within an iframe | [optional] [default to true]
-**all_native_ads** | [**\Swagger\Client\Model\NativeAdResponse[]**](NativeAdResponse.md) | Native ad model | [optional] 
+**all_native_ads** | [**\CollingMedia\StackAdapt\Model\NativeAdResponse[]**](NativeAdResponse.md) | Native ad model | [optional] 
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
 

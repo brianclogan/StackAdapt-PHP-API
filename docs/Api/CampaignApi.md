@@ -1,4 +1,4 @@
-# Swagger\Client\CampaignApi
+# CollingMedia\StackAdapt\CampaignApi
 
 All URIs are relative to *http://api.stackadapt.com/service/v2*
 
@@ -16,7 +16,7 @@ Method | HTTP request | Description
 
 
 # **createCampaign**
-> \Swagger\Client\Model\CampaignResponse createCampaign($body)
+> \CollingMedia\StackAdapt\Model\CampaignResponse createCampaign($body)
 
 Create new campaign
 
@@ -28,16 +28,16 @@ Creates a new campaign
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure API key authorization: api_key
-Swagger\Client\Configuration::getDefaultConfiguration()->setApiKey('api_key', 'YOUR_API_KEY');
+CollingMedia\StackAdapt\Configuration::getDefaultConfiguration()->setApiKey('api_key', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// Swagger\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('api_key', 'Bearer');
+// CollingMedia\StackAdapt\Configuration::getDefaultConfiguration()->setApiKeyPrefix('api_key', 'Bearer');
 // Configure API key authorization: X-Authorization
-Swagger\Client\Configuration::getDefaultConfiguration()->setApiKey('X-Authorization', 'YOUR_API_KEY');
+CollingMedia\StackAdapt\Configuration::getDefaultConfiguration()->setApiKey('X-Authorization', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// Swagger\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('X-Authorization', 'Bearer');
+// CollingMedia\StackAdapt\Configuration::getDefaultConfiguration()->setApiKeyPrefix('X-Authorization', 'Bearer');
 
-$api_instance = new Swagger\Client\Api\CampaignApi();
-$body = new \Swagger\Client\Model\CampaignRequest(); // \Swagger\Client\Model\CampaignRequest | 
+$api_instance = new CollingMedia\StackAdapt\Api\CampaignApi();
+$body = new \CollingMedia\StackAdapt\Model\CampaignRequest(); // \CollingMedia\StackAdapt\Model\CampaignRequest | 
 
 try {
     $result = $api_instance->createCampaign($body);
@@ -52,11 +52,11 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **body** | [**\Swagger\Client\Model\CampaignRequest**](../Model/\Swagger\Client\Model\CampaignRequest.md)|  | [optional]
+ **body** | [**\CollingMedia\StackAdapt\Model\CampaignRequest**](../Model/\CollingMedia\StackAdapt\Model\CampaignRequest.md)|  | [optional]
 
 ### Return type
 
-[**\Swagger\Client\Model\CampaignResponse**](../Model/CampaignResponse.md)
+[**\CollingMedia\StackAdapt\Model\CampaignResponse**](../Model/CampaignResponse.md)
 
 ### Authorization
 
@@ -70,7 +70,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **createCampaign_0**
-> \Swagger\Client\Model\CampaignResponse createCampaign_0($body)
+> \CollingMedia\StackAdapt\Model\CampaignResponse createCampaign_0($body)
 
 Create new campaign
 
@@ -82,16 +82,16 @@ Creates a new campaign
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure API key authorization: api_key
-Swagger\Client\Configuration::getDefaultConfiguration()->setApiKey('api_key', 'YOUR_API_KEY');
+CollingMedia\StackAdapt\Configuration::getDefaultConfiguration()->setApiKey('api_key', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// Swagger\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('api_key', 'Bearer');
+// CollingMedia\StackAdapt\Configuration::getDefaultConfiguration()->setApiKeyPrefix('api_key', 'Bearer');
 // Configure API key authorization: X-Authorization
-Swagger\Client\Configuration::getDefaultConfiguration()->setApiKey('X-Authorization', 'YOUR_API_KEY');
+CollingMedia\StackAdapt\Configuration::getDefaultConfiguration()->setApiKey('X-Authorization', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// Swagger\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('X-Authorization', 'Bearer');
+// CollingMedia\StackAdapt\Configuration::getDefaultConfiguration()->setApiKeyPrefix('X-Authorization', 'Bearer');
 
-$api_instance = new Swagger\Client\Api\CampaignApi();
-$body = new \Swagger\Client\Model\CampaignRequest(); // \Swagger\Client\Model\CampaignRequest | 
+$api_instance = new CollingMedia\StackAdapt\Api\CampaignApi();
+$body = new \CollingMedia\StackAdapt\Model\CampaignRequest(); // \CollingMedia\StackAdapt\Model\CampaignRequest | 
 
 try {
     $result = $api_instance->createCampaign_0($body);
@@ -106,11 +106,11 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **body** | [**\Swagger\Client\Model\CampaignRequest**](../Model/\Swagger\Client\Model\CampaignRequest.md)|  | [optional]
+ **body** | [**\CollingMedia\StackAdapt\Model\CampaignRequest**](../Model/\CollingMedia\StackAdapt\Model\CampaignRequest.md)|  | [optional]
 
 ### Return type
 
-[**\Swagger\Client\Model\CampaignResponse**](../Model/CampaignResponse.md)
+[**\CollingMedia\StackAdapt\Model\CampaignResponse**](../Model/CampaignResponse.md)
 
 ### Authorization
 
@@ -136,15 +136,15 @@ Deletes a campaign
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure API key authorization: api_key
-Swagger\Client\Configuration::getDefaultConfiguration()->setApiKey('api_key', 'YOUR_API_KEY');
+CollingMedia\StackAdapt\Configuration::getDefaultConfiguration()->setApiKey('api_key', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// Swagger\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('api_key', 'Bearer');
+// CollingMedia\StackAdapt\Configuration::getDefaultConfiguration()->setApiKeyPrefix('api_key', 'Bearer');
 // Configure API key authorization: X-Authorization
-Swagger\Client\Configuration::getDefaultConfiguration()->setApiKey('X-Authorization', 'YOUR_API_KEY');
+CollingMedia\StackAdapt\Configuration::getDefaultConfiguration()->setApiKey('X-Authorization', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// Swagger\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('X-Authorization', 'Bearer');
+// CollingMedia\StackAdapt\Configuration::getDefaultConfiguration()->setApiKeyPrefix('X-Authorization', 'Bearer');
 
-$api_instance = new Swagger\Client\Api\CampaignApi();
+$api_instance = new CollingMedia\StackAdapt\Api\CampaignApi();
 $id = 56; // int | Id of campaign
 
 try {
@@ -189,15 +189,15 @@ Deletes a campaign
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure API key authorization: api_key
-Swagger\Client\Configuration::getDefaultConfiguration()->setApiKey('api_key', 'YOUR_API_KEY');
+CollingMedia\StackAdapt\Configuration::getDefaultConfiguration()->setApiKey('api_key', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// Swagger\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('api_key', 'Bearer');
+// CollingMedia\StackAdapt\Configuration::getDefaultConfiguration()->setApiKeyPrefix('api_key', 'Bearer');
 // Configure API key authorization: X-Authorization
-Swagger\Client\Configuration::getDefaultConfiguration()->setApiKey('X-Authorization', 'YOUR_API_KEY');
+CollingMedia\StackAdapt\Configuration::getDefaultConfiguration()->setApiKey('X-Authorization', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// Swagger\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('X-Authorization', 'Bearer');
+// CollingMedia\StackAdapt\Configuration::getDefaultConfiguration()->setApiKeyPrefix('X-Authorization', 'Bearer');
 
-$api_instance = new Swagger\Client\Api\CampaignApi();
+$api_instance = new CollingMedia\StackAdapt\Api\CampaignApi();
 $id = 56; // int | Id of campaign
 
 try {
@@ -230,7 +230,7 @@ void (empty response body)
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **findCampaign**
-> \Swagger\Client\Model\CampaignResponse findCampaign($id)
+> \CollingMedia\StackAdapt\Model\CampaignResponse findCampaign($id)
 
 Find campaign by id
 
@@ -242,15 +242,15 @@ Returns a specific campaign with the corresponding id from the system that the u
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure API key authorization: api_key
-Swagger\Client\Configuration::getDefaultConfiguration()->setApiKey('api_key', 'YOUR_API_KEY');
+CollingMedia\StackAdapt\Configuration::getDefaultConfiguration()->setApiKey('api_key', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// Swagger\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('api_key', 'Bearer');
+// CollingMedia\StackAdapt\Configuration::getDefaultConfiguration()->setApiKeyPrefix('api_key', 'Bearer');
 // Configure API key authorization: X-Authorization
-Swagger\Client\Configuration::getDefaultConfiguration()->setApiKey('X-Authorization', 'YOUR_API_KEY');
+CollingMedia\StackAdapt\Configuration::getDefaultConfiguration()->setApiKey('X-Authorization', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// Swagger\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('X-Authorization', 'Bearer');
+// CollingMedia\StackAdapt\Configuration::getDefaultConfiguration()->setApiKeyPrefix('X-Authorization', 'Bearer');
 
-$api_instance = new Swagger\Client\Api\CampaignApi();
+$api_instance = new CollingMedia\StackAdapt\Api\CampaignApi();
 $id = 56; // int | Id of campaign
 
 try {
@@ -270,7 +270,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Swagger\Client\Model\CampaignResponse**](../Model/CampaignResponse.md)
+[**\CollingMedia\StackAdapt\Model\CampaignResponse**](../Model/CampaignResponse.md)
 
 ### Authorization
 
@@ -284,7 +284,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **findCampaign_0**
-> \Swagger\Client\Model\CampaignResponse findCampaign_0($id)
+> \CollingMedia\StackAdapt\Model\CampaignResponse findCampaign_0($id)
 
 Find campaign by id
 
@@ -296,15 +296,15 @@ Returns a specific campaign with the corresponding id from the system that the u
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure API key authorization: api_key
-Swagger\Client\Configuration::getDefaultConfiguration()->setApiKey('api_key', 'YOUR_API_KEY');
+CollingMedia\StackAdapt\Configuration::getDefaultConfiguration()->setApiKey('api_key', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// Swagger\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('api_key', 'Bearer');
+// CollingMedia\StackAdapt\Configuration::getDefaultConfiguration()->setApiKeyPrefix('api_key', 'Bearer');
 // Configure API key authorization: X-Authorization
-Swagger\Client\Configuration::getDefaultConfiguration()->setApiKey('X-Authorization', 'YOUR_API_KEY');
+CollingMedia\StackAdapt\Configuration::getDefaultConfiguration()->setApiKey('X-Authorization', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// Swagger\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('X-Authorization', 'Bearer');
+// CollingMedia\StackAdapt\Configuration::getDefaultConfiguration()->setApiKeyPrefix('X-Authorization', 'Bearer');
 
-$api_instance = new Swagger\Client\Api\CampaignApi();
+$api_instance = new CollingMedia\StackAdapt\Api\CampaignApi();
 $id = 56; // int | Id of campaign
 
 try {
@@ -324,7 +324,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Swagger\Client\Model\CampaignResponse**](../Model/CampaignResponse.md)
+[**\CollingMedia\StackAdapt\Model\CampaignResponse**](../Model/CampaignResponse.md)
 
 ### Authorization
 
@@ -338,7 +338,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **findCampaigns**
-> \Swagger\Client\Model\CampaignResponse[] findCampaigns()
+> \CollingMedia\StackAdapt\Model\CampaignResponse[] findCampaigns()
 
 Return all campaigns
 
@@ -350,15 +350,15 @@ Returns all campaigns from the system that the user has access to
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure API key authorization: api_key
-Swagger\Client\Configuration::getDefaultConfiguration()->setApiKey('api_key', 'YOUR_API_KEY');
+CollingMedia\StackAdapt\Configuration::getDefaultConfiguration()->setApiKey('api_key', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// Swagger\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('api_key', 'Bearer');
+// CollingMedia\StackAdapt\Configuration::getDefaultConfiguration()->setApiKeyPrefix('api_key', 'Bearer');
 // Configure API key authorization: X-Authorization
-Swagger\Client\Configuration::getDefaultConfiguration()->setApiKey('X-Authorization', 'YOUR_API_KEY');
+CollingMedia\StackAdapt\Configuration::getDefaultConfiguration()->setApiKey('X-Authorization', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// Swagger\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('X-Authorization', 'Bearer');
+// CollingMedia\StackAdapt\Configuration::getDefaultConfiguration()->setApiKeyPrefix('X-Authorization', 'Bearer');
 
-$api_instance = new Swagger\Client\Api\CampaignApi();
+$api_instance = new CollingMedia\StackAdapt\Api\CampaignApi();
 
 try {
     $result = $api_instance->findCampaigns();
@@ -374,7 +374,7 @@ This endpoint does not need any parameter.
 
 ### Return type
 
-[**\Swagger\Client\Model\CampaignResponse[]**](../Model/CampaignResponse.md)
+[**\CollingMedia\StackAdapt\Model\CampaignResponse[]**](../Model/CampaignResponse.md)
 
 ### Authorization
 
@@ -388,7 +388,7 @@ This endpoint does not need any parameter.
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **updateCampaign**
-> \Swagger\Client\Model\CampaignResponse updateCampaign($id, $body)
+> \CollingMedia\StackAdapt\Model\CampaignResponse updateCampaign($id, $body)
 
 Update existing campaign
 
@@ -400,17 +400,17 @@ Updates an existing campaign
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure API key authorization: api_key
-Swagger\Client\Configuration::getDefaultConfiguration()->setApiKey('api_key', 'YOUR_API_KEY');
+CollingMedia\StackAdapt\Configuration::getDefaultConfiguration()->setApiKey('api_key', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// Swagger\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('api_key', 'Bearer');
+// CollingMedia\StackAdapt\Configuration::getDefaultConfiguration()->setApiKeyPrefix('api_key', 'Bearer');
 // Configure API key authorization: X-Authorization
-Swagger\Client\Configuration::getDefaultConfiguration()->setApiKey('X-Authorization', 'YOUR_API_KEY');
+CollingMedia\StackAdapt\Configuration::getDefaultConfiguration()->setApiKey('X-Authorization', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// Swagger\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('X-Authorization', 'Bearer');
+// CollingMedia\StackAdapt\Configuration::getDefaultConfiguration()->setApiKeyPrefix('X-Authorization', 'Bearer');
 
-$api_instance = new Swagger\Client\Api\CampaignApi();
+$api_instance = new CollingMedia\StackAdapt\Api\CampaignApi();
 $id = 56; // int | Id of campaign
-$body = new \Swagger\Client\Model\CampaignRequest(); // \Swagger\Client\Model\CampaignRequest | 
+$body = new \CollingMedia\StackAdapt\Model\CampaignRequest(); // \CollingMedia\StackAdapt\Model\CampaignRequest | 
 
 try {
     $result = $api_instance->updateCampaign($id, $body);
@@ -426,11 +426,11 @@ try {
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **id** | **int**| Id of campaign |
- **body** | [**\Swagger\Client\Model\CampaignRequest**](../Model/\Swagger\Client\Model\CampaignRequest.md)|  | [optional]
+ **body** | [**\CollingMedia\StackAdapt\Model\CampaignRequest**](../Model/\CollingMedia\StackAdapt\Model\CampaignRequest.md)|  | [optional]
 
 ### Return type
 
-[**\Swagger\Client\Model\CampaignResponse**](../Model/CampaignResponse.md)
+[**\CollingMedia\StackAdapt\Model\CampaignResponse**](../Model/CampaignResponse.md)
 
 ### Authorization
 
@@ -444,7 +444,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **updateCampaign_0**
-> \Swagger\Client\Model\CampaignResponse updateCampaign_0($id, $body)
+> \CollingMedia\StackAdapt\Model\CampaignResponse updateCampaign_0($id, $body)
 
 Update existing campaign
 
@@ -456,17 +456,17 @@ Updates an existing campaign
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure API key authorization: api_key
-Swagger\Client\Configuration::getDefaultConfiguration()->setApiKey('api_key', 'YOUR_API_KEY');
+CollingMedia\StackAdapt\Configuration::getDefaultConfiguration()->setApiKey('api_key', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// Swagger\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('api_key', 'Bearer');
+// CollingMedia\StackAdapt\Configuration::getDefaultConfiguration()->setApiKeyPrefix('api_key', 'Bearer');
 // Configure API key authorization: X-Authorization
-Swagger\Client\Configuration::getDefaultConfiguration()->setApiKey('X-Authorization', 'YOUR_API_KEY');
+CollingMedia\StackAdapt\Configuration::getDefaultConfiguration()->setApiKey('X-Authorization', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// Swagger\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('X-Authorization', 'Bearer');
+// CollingMedia\StackAdapt\Configuration::getDefaultConfiguration()->setApiKeyPrefix('X-Authorization', 'Bearer');
 
-$api_instance = new Swagger\Client\Api\CampaignApi();
+$api_instance = new CollingMedia\StackAdapt\Api\CampaignApi();
 $id = 56; // int | Id of campaign
-$body = new \Swagger\Client\Model\CampaignRequest(); // \Swagger\Client\Model\CampaignRequest | 
+$body = new \CollingMedia\StackAdapt\Model\CampaignRequest(); // \CollingMedia\StackAdapt\Model\CampaignRequest | 
 
 try {
     $result = $api_instance->updateCampaign_0($id, $body);
@@ -482,11 +482,11 @@ try {
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **id** | **int**| Id of campaign |
- **body** | [**\Swagger\Client\Model\CampaignRequest**](../Model/\Swagger\Client\Model\CampaignRequest.md)|  | [optional]
+ **body** | [**\CollingMedia\StackAdapt\Model\CampaignRequest**](../Model/\CollingMedia\StackAdapt\Model\CampaignRequest.md)|  | [optional]
 
 ### Return type
 
-[**\Swagger\Client\Model\CampaignResponse**](../Model/CampaignResponse.md)
+[**\CollingMedia\StackAdapt\Model\CampaignResponse**](../Model/CampaignResponse.md)
 
 ### Authorization
 
