@@ -45,10 +45,6 @@ require_once(__DIR__ . '/vendor/autoload.php');
 CollingMedia\StackAdapt\Configuration::getDefaultConfiguration()->setApiKey('api_key', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 // CollingMedia\StackAdapt\Configuration::getDefaultConfiguration()->setApiKeyPrefix('api_key', 'Bearer');
-// Configure API key authorization: X-Authorization
-CollingMedia\StackAdapt\Configuration::getDefaultConfiguration()->setApiKey('X-Authorization', 'YOUR_API_KEY');
-// Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// CollingMedia\StackAdapt\Configuration::getDefaultConfiguration()->setApiKeyPrefix('X-Authorization', 'Bearer');
 
 $api_instance = new CollingMedia\StackAdapt\Api\CampaignApi();
 $body = new \CollingMedia\StackAdapt\Model\CampaignRequest(); // \CollingMedia\StackAdapt\Model\CampaignRequest | 
@@ -118,14 +114,7 @@ Class | Method | HTTP request | Description
 
 ## Documentation For Authorization
 
-
-## X-Authorization
-
-- **Type**: API key
-- **API key parameter name**: X-Authorization
-- **Location**: HTTP header
-
-## api_key
+### api_key
 
 - **Type**: API key
 - **API key parameter name**: api_key
