@@ -70,14 +70,10 @@ All URIs are relative to *http://api.stackadapt.com/service/v2*
 Class | Method | HTTP request | Description
 ------------ | ------------- | ------------- | -------------
 *CampaignApi* | [**createCampaign**](docs/Api/CampaignApi.md#createcampaign) | **POST** /campaign | Create new campaign
-*CampaignApi* | [**createCampaign_0**](docs/Api/CampaignApi.md#createcampaign_0) | **POST** /campaign | Create new campaign
 *CampaignApi* | [**deleteCampaign**](docs/Api/CampaignApi.md#deletecampaign) | **DELETE** /campaign/{id} | Delete a campaign
-*CampaignApi* | [**deleteCampaign_0**](docs/Api/CampaignApi.md#deletecampaign_0) | **DELETE** /campaign/{id} | Delete a campaign
 *CampaignApi* | [**findCampaign**](docs/Api/CampaignApi.md#findcampaign) | **GET** /campaign/{id} | Find campaign by id
-*CampaignApi* | [**findCampaign_0**](docs/Api/CampaignApi.md#findcampaign_0) | **GET** /campaign/{id} | Find campaign by id
 *CampaignApi* | [**findCampaigns**](docs/Api/CampaignApi.md#findcampaigns) | **GET** /campaigns | Return all campaigns
 *CampaignApi* | [**updateCampaign**](docs/Api/CampaignApi.md#updatecampaign) | **PUT** /campaign/{id} | Update existing campaign
-*CampaignApi* | [**updateCampaign_0**](docs/Api/CampaignApi.md#updatecampaign_0) | **PUT** /campaign/{id} | Update existing campaign
 *CampaignsApi* | [**findCampaigns**](docs/Api/CampaignsApi.md#findcampaigns) | **GET** /campaigns | Return all campaigns
 *ConversionTrackersApi* | [**createConversionTracker**](docs/Api/ConversionTrackersApi.md#createconversiontracker) | **POST** /conversion_tracker | Create new conversion tracker
 *ConversionTrackersApi* | [**deleteConversionTrackers**](docs/Api/ConversionTrackersApi.md#deleteconversiontrackers) | **DELETE** /conversion_tracker/{id} | Delete a conversion tracker
