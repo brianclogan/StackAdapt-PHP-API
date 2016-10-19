@@ -95,18 +95,7 @@ class StatsApiTest extends \PHPUnit_Framework_TestCase
      * Get stats.
      *
      */
-    public function testGetStats0()
-    {
-
-    }
-
-    /**
-     * Test case for getStats_0
-     *
-     * Get stats.
-     *
-     */
-    public function testGetStats0()
+    public function testGetStats()
     {
 
     }

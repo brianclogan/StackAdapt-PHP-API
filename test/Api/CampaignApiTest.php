@@ -40,10 +40,13 @@
 
 namespace CollingMedia\StackAdapt;
 
+use CollingMedia\StackAdapt\Api\CampaignApi;
 use \CollingMedia\StackAdapt\Configuration;
 use \CollingMedia\StackAdapt\ApiClient;
 use \CollingMedia\StackAdapt\ApiException;
+use CollingMedia\StackAdapt\Model\CampaignRequest;
 use \CollingMedia\StackAdapt\ObjectSerializer;
+use Exception;
 
 /**
  * CampaignApiTest Class Doc Comment
@@ -57,12 +60,14 @@ use \CollingMedia\StackAdapt\ObjectSerializer;
 class CampaignApiTest extends \PHPUnit_Framework_TestCase
 {
 
+    protected $campaign;
+
     /**
      * Setup before running any test cases
      */
     public static function setUpBeforeClass()
     {
-
+        Configuration::getDefaultConfiguration()->setApiKey('api_key', $_ENV['api_key']);
     }
 
     /**
@@ -95,42 +100,21 @@ class CampaignApiTest extends \PHPUnit_Framework_TestCase
      * Create new campaign.
      *
      */
-    public function testCreateCampaign0()
+    public function testCreateCampaign()
     {
+        $api_instance = new CampaignApi();
+        $body = new CampaignRequest();
 
-    }
+        $body->setAdvertiser($_ENV['advertiser']);
+        $body->setState('paused');
 
-    /**
-     * Test case for createCampaign_0
-     *
-     * Create new campaign.
-     *
-     */
-    public function testCreateCampaign0()
-    {
-
-    }
-
-    /**
-     * Test case for deleteCampaign
-     *
-     * Delete a campaign.
-     *
-     */
-    public function testDeleteCampaign0()
-    {
-
-    }
-
-    /**
-     * Test case for deleteCampaign_0
-     *
-     * Delete a campaign.
-     *
-     */
-    public function testDeleteCampaign0()
-    {
-
+        try {
+            $result = $api_instance->createCampaign($body);
+            $this->campaignId = $result;
+            print_r($result);
+        } catch (Exception $e) {
+            echo 'Exception when calling CampaignApi->createCampaign: ', $e->getMessage(), PHP_EOL;
+        }
     }
 
     /**
@@ -139,20 +123,21 @@ class CampaignApiTest extends \PHPUnit_Framework_TestCase
      * Find campaign by id.
      *
      */
-    public function testFindCampaign0()
+    public function testFindCampaign()
     {
+        $api_instance = new CampaignApi();
+        $body = new CampaignRequest();
 
-    }
+        $body->setAdvertiser($_ENV['advertiser']);
+        $body->setState('paused');
 
-    /**
-     * Test case for findCampaign_0
-     *
-     * Find campaign by id.
-     *
-     */
-    public function testFindCampaign0()
-    {
-
+        try {
+            $result = $api_instance->findCampaign($this->campaign->id);
+            $this->campaignId = $result;
+            print_r($result);
+        } catch (Exception $e) {
+            echo 'Exception when calling CampaignApi->createCampaign: ', $e->getMessage(), PHP_EOL;
+        }
     }
 
     /**
@@ -163,7 +148,15 @@ class CampaignApiTest extends \PHPUnit_Framework_TestCase
      */
     public function testFindCampaigns()
     {
+        $api_instance = new CampaignApi();
 
+        try {
+            $result = $api_instance->findCampaign($this->campaign->id);
+            $this->campaignId = $result;
+            print_r($result);
+        } catch (Exception $e) {
+            echo 'Exception when calling CampaignApi->findCampaign: ', $e->getMessage(), PHP_EOL;
+        }
     }
 
     /**
@@ -172,20 +165,39 @@ class CampaignApiTest extends \PHPUnit_Framework_TestCase
      * Update existing campaign.
      *
      */
-    public function testUpdateCampaign0()
+    public function testUpdateCampaign()
     {
+        $api_instance = new CampaignApi();
+        $body = new CampaignRequest();
 
+        $body->setAdvertiser($_ENV['advertiser']);
+        $body->setName('Test Campaign');
+
+        try {
+            $result = $api_instance->updateCampaign($this->campaign->id, $body);
+            $this->campaignId = $result;
+            print_r($result);
+        } catch (Exception $e) {
+            echo 'Exception when calling CampaignApi->updateCampaign: ', $e->getMessage(), PHP_EOL;
+        }
     }
 
     /**
-     * Test case for updateCampaign_0
+     * Test case for deleteCampaign
      *
-     * Update existing campaign.
+     * Delete a campaign.
      *
      */
-    public function testUpdateCampaign0()
+    public function testDeleteCampaign()
     {
-
+        $api_instance = new CampaignApi();
+        try {
+            $result = $api_instance->deleteCampaign($this->campaign-id);
+            $this->campaignId = $result;
+            print_r($result);
+        } catch (Exception $e) {
+            echo 'Exception when calling CampaignApi->deleteCampaign: ', $e->getMessage(), PHP_EOL;
+        }
     }
 
 }
